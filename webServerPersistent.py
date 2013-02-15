@@ -1,5 +1,5 @@
 """
-WebServer.py
+webServer.py
 Mayank Gureja
 02/06/2013
 ECEC 433
@@ -46,7 +46,7 @@ class WebServer(BaseHTTPServer.BaseHTTPRequestHandler):
         # print "%s" % str(url_qs)
 
         if self.path.endswith(".jpg"):  # Send back image
-            f = open(os.getcwd() + "\\" + random.choice(images), "rb")  # Open image
+            f = open(os.getcwd() + "\\pics\\" + random.choice(images), "rb")  # Open image
             # print os.path.abspath(f.name)
 
             self.send_response(200)

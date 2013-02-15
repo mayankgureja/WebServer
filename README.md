@@ -7,7 +7,7 @@ A Web Server with GET, POST and File Uploading, written in Python
 How To Run
 ----------
 
-Just launch WebServer.py. There are no parameters.
+Just launch webServer*.py. There are no parameters.
 
 
 Compatibility
@@ -19,9 +19,9 @@ Tested to work on Google Chrome, Firefox, Internet Explorer, Google Chrome for A
 Description
 -----------
 
-WebServer.py is a Web Server written in Python. It uses the BaseHTTPServer library to create sockets and run an always-on web service. The advantage of having used BaseHTTPServer is less coding (fewer lines), no need to implement select.select() (it's built-in) and greater flexibility and ease in coding more advanced functions.
+webServer*.py is a Web Server written in Python. It uses the BaseHTTPServer library to create sockets and run an always-on web service. The advantage of having used BaseHTTPServer is less coding (fewer lines), no need to implement select.select() (it's built-in) and greater flexibility and ease in coding more advanced functions.
 
-WebServer.py has a connection timeout of 120 seconds and uses HTTP 1.1 that allows for persistent connections. Content-Length is sent with every request so the client knows how much information to expect and close the connection accordingly.
+webServerPersistent.py has a connection timeout of 120 seconds and uses HTTP 1.1 that allows for persistent connections. webServerNonPersistent.py has no custom timeout limit and no persistence, so connectionc close immediately (faster). Content-Length is sent with every request so the client knows how much information to expect and close the connection accordingly.
 
 It has been tested to work Google Chrome, Firefox, Internet Explorer, Google Chrome for Android and Android Web Browser.
 
